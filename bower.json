@@ -1,0 +1,22 @@
+{
+  "name": "Shipped.ai",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shipped/shipped",
+  "description": "See if stuff is shipped",
+  "main": "server.js",
+  "keywords": [
+    "GitHub"
+  ],
+  "authors": [
+    "Thomas Jansen",
+    "Christopher Asche"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
