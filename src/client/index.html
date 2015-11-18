@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Angular 2 QuickStart</title>
+<!--
+    <script src="libs/traceur-runtime/traceur-runtime.js"></script>
+    <script src="libs/system.js/dist/system.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.sfx.dev.js"></script>
+-->
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-alpha.44/angular2.dev.js"></script>
+    <script>
+    System.config({
+       transpiler: 'typescript',
+       typescriptOptions: { emitDecoratorMetadata: true }
+     });
+     System.import('./app.ts');
+    </script>
+  </head>
+  <body>
+    <my-app>
+      <script>
+        System.import('app.ts');
+      </script>
+    </my-app>
+  </body>
+</html>

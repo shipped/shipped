@@ -18,5 +18,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "system.js": "~0.19.6",
+    "traceur-runtime": "~0.0.92"
+  }
 }

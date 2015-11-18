@@ -6,7 +6,7 @@ var mocha = require('gulp-mocha');
 
 gulp.task('default', function() {
   nodemon({
-    script: 'server.js',
+    script: 'src/server/server.js',
     ext: 'js html',
     env: {
       'NODE_ENV': 'development'
@@ -15,20 +15,20 @@ gulp.task('default', function() {
 });
 
 gulp.task('lint', function() {
-  return gulp.src(['app/**/*.js', 'tests/**/*.js'])
+  return gulp.src(['src/**/*.ts', 'src/**/*.js'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError());
 });
 
 gulp.task('style', function() {
-  return gulp.src(['app/**/*.js', 'tests/**/*.js'])
+  return gulp.src(['src/**/*.ts', 'src/**/*.js'])
     .pipe(jscs())
     .pipe(jscs.reporter());
 });
 
 gulp.task('test', function() {
-  return gulp.src(['tests/**.js'], {
+  return gulp.src(['src/tests/**.js'], {
     read: false
   }).pipe(mocha({
     reporter: 'nyan'

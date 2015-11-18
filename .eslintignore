@@ -1,2 +1,3 @@
 node_modules
-public/libs
+src/client/libs
+src/client/node_modules
