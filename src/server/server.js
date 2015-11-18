@@ -1,7 +1,7 @@
 var express = require('express');
+/*eslint-disable no-unused-vars*/
 var colors = require('colors');
 var config = require('./config/env/' + (process.env.NODE_ENV || 'development') + '.js');
-var glob = require('glob');
 var async = require('async');
 var http = require('http');
 

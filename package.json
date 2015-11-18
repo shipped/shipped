@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "gulp lint",
+    "tslint": "gulp tslint",
     "style": "gulp style"
   },
   "repository": {
@@ -23,6 +24,7 @@
   "pre-commit": [
     "test",
     "lint",
+    "tslint",
     "style"
   ],
   "homepage": "https://github.com/shipped/shipped#readme",
@@ -38,11 +40,12 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "pre-commit": "^1.1.2",
     "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
+    "gulp-eslint": "^1.1.0",
     "gulp-jscs": "^3.0.2",
     "gulp-mocha": "^2.1.3",
-    "gulp-nodemon": "^2.0.4"
+    "gulp-nodemon": "^2.0.4",
+    "gulp-tslint": "^3.6.0",
+    "pre-commit": "^1.1.2"
   }
 }
