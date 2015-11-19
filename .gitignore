@@ -31,5 +31,5 @@ src/client/node_modules
 src/client/libs
 
 # generated js
-src/client/*.js
-src/client/*.js.map
+src/client/**/*.js
+src/client/**/*.js.map

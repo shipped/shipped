@@ -12,7 +12,7 @@ async.series([
   function(cb) {
     config.server.static.app.forEach(function(p) {
       console.log('✓ Serving static files from '.bold.green + p);
-      app.use('/', express.static(p));
+      app.use(express.static(p));
     });
     config.server.static.lib.forEach(function(p) {
       console.log('✓ Serving static files from '.bold.green + p);

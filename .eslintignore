@@ -1,5 +1,5 @@
 node_modules
 src/client/libs
 src/client/node_modules
-src/client/*.js
-src/client/*.js.map
+src/client/**/*.js
+src/client/**/*.js.map
