@@ -1,7 +1,8 @@
 {
   "preset": "grunt",
   "requireCurlyBraces": true,
-  "excludeFiles": ["node_modules/**", "src/client/libs/**", "src/client/node_modules/**"],
+  "excludeFiles": ["node_modules/**", "src/client/libs/**", "src/client/node_modules/**", "src/client/*.js",
+  "src/client/*.js.map"],
   "disallowMixedSpacesAndTabs" : true,
   "disallowTrailingComma": true
 }

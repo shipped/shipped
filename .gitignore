@@ -28,4 +28,8 @@ node_modules
 src/client/node_modules
 
 # bower
-sc/client/libs
+src/client/libs
+
+# generated js
+src/client/*.js
+src/client/*.js.map
