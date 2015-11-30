@@ -4,3 +4,6 @@
 
 See if stuff is shipped
 
+1. npm install
+2. npm run tsc
+3. gulp
