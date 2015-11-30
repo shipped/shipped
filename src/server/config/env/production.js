@@ -8,6 +8,11 @@ module.exports = {
     static: {
       lib: [path.resolve(__dirname, '../../../../node_modules/')],
       app: [path.resolve(__dirname, '../../../client')]
+    },
+    github: {
+      // required
+      client: process.env.GITHUB_CLIENT,
+      secret: process.env.GITHUB_SECRET
     }
   }
 };
